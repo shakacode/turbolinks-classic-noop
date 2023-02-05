@@ -688,7 +688,8 @@ browserIsBuggy =
 
 requestMethodIsSafe = popCookie('request_method') in ['GET','']
 
-browserSupportsTurbolinks = browserSupportsPushState and !browserIsBuggy and requestMethodIsSafe
+# Disabling Turbolinks for all browsers
+browserSupportsTurbolinks = false
 
 browserSupportsCustomEvents =
   document.addEventListener and document.createEvent
